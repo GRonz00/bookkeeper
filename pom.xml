@@ -71,6 +71,8 @@
     <module>tests</module>
     <module>native-io</module>
     <module>testtools</module>
+
+    <module>jacoco-reports</module>
   </modules>
   <mailingLists>
     <mailingList>
@@ -202,6 +204,9 @@
     <otel.version>1.26.0</otel.version>
     <UBUNTU_MIRROR>http://archive.ubuntu.com/ubuntu/</UBUNTU_MIRROR>
     <UBUNTU_SECURITY_MIRROR>http://security.ubuntu.com/ubuntu/</UBUNTU_SECURITY_MIRROR>
+
+    <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
+    <sonar.coverage.jacoco.xmlReportPaths>../jacoco-reports/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
   </properties>
 
   <!-- dependency definitions -->
@@ -916,7 +921,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <argLine>-Xmx2G -Djava.net.preferIPv4Stack=true -Dio.netty.leakDetection.level=paranoid ${test.additional.args}</argLine>
+          <!--<argLine>-Xmx2G -Djava.net.preferIPv4Stack=true -Dio.netty.leakDetection.level=paranoid ${test.additional.args}</argLine> -->
           <redirectTestOutputToFile>${redirectTestOutputToFile}</redirectTestOutputToFile>
           <forkCount>${forkCount.variable}</forkCount>
           <reuseForks>false</reuseForks>
@@ -1341,6 +1346,31 @@
         <!-- Override the default value with the environment variable -->
         <UBUNTU_SECURITY_MIRROR>${env.UBUNTU_SECURITY_MIRROR}</UBUNTU_SECURITY_MIRROR>
       </properties>
+    </profile>
+
+    <profile>
+      <id>jacoco</id>
+      <activation>
+        <property>
+          <name>jacoco</name>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>prepare-agent</id>
+                <goals>
+                  <goal>prepare-agent</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
   </profiles>
 </project>
