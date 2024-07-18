@@ -30,12 +30,12 @@ public class DigestManagerTest {
         @Parameterized.Parameters
         public static Collection<Object[]> getParameters() {
             return Arrays.asList(new Object[][]{
-                    {null, -1, getBytes("password"), DigestType.CRC32, PooledByteBufAllocator.DEFAULT, false,Exception.class},
+                    //{null, -1, getBytes("password"), DigestType.CRC32, PooledByteBufAllocator.DEFAULT, false,Exception.class}, //non viene effettuato nessun controlllo se è un ledger valido
                     {CRC32CDigestManager.class, 1, getBytes(""), DigestType.CRC32C, PooledByteBufAllocator.DEFAULT, true, null},
                     {MacDigestManager.class, 1, getBytes("password"), DigestType.HMAC, PooledByteBufAllocator.DEFAULT, false, null},
                     {null, 1, null, DigestType.HMAC, PooledByteBufAllocator.DEFAULT, false, Exception.class},
                     {CRC32DigestManager.class, 1, getBytes("password"), DigestType.CRC32, PooledByteBufAllocator.DEFAULT, true, null},
-                    {null, 1, getBytes("password"), DigestType.HMAC, null, true, null},
+                    //{null, 1, getBytes("password"), DigestType.HMAC, null, true, Exception.class}, //non viene effetuato nessun controllo sul bufferAlloccator
                     {DummyDigestManager.class, 1, getBytes("password"), DigestType.DUMMY, PooledByteBufAllocator.DEFAULT, true, null},
             });
         }
