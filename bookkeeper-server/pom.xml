@@ -473,10 +473,10 @@
             <version>${pitest.version}</version>
             <configuration>
               <targetClasses>
-                <param>org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicy</param>
+                <param>org.apache.bookkeeper.proto.checksum.DigestManager</param>
               </targetClasses>
               <targetTests>
-                <param>org.apache.bookkeeper.client.DefaultEnsemblePlacementPolicyTest</param>
+                <param>org.apache.bookkeeper.proto.checksum.DigestManagerTest</param>
               </targetTests>
             </configuration>
             <executions>
