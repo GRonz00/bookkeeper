@@ -485,10 +485,10 @@
             <version>${pitest.version}</version>
             <configuration>
               <targetClasses>
-                <param>org.apache.bookkeeper.proto.checksum.DigestManager</param>
+                <param>org.apache.bookkeeper.bookie.storage.ldb.WriteCache</param>
               </targetClasses>
               <targetTests>
-                <param>org.apache.bookkeeper.proto.checksum.DigestManagerTest</param>
+                <param>org.apache.bookkeeper.bookie.storage.ldb.WriteCacheTest</param>
               </targetTests>
             </configuration>
             <executions>
