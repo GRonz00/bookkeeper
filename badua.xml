@@ -11839,152 +11839,152 @@
   </class>
   <class name="org/apache/bookkeeper/bookie/storage/ldb/WriteCache">
     <method name="&lt;init&gt;" desc="(Lio/netty/buffer/ByteBufAllocator;JI)V">
-      <du var="this" def="93" use="99" covered="0"/>
-      <du var="this" def="93" use="100" covered="0"/>
-      <du var="this" def="93" use="101" covered="0"/>
-      <du var="this" def="93" use="102" covered="0"/>
-      <du var="this" def="93" use="103" covered="0"/>
-      <du var="this" def="93" use="105" covered="0"/>
-      <du var="this" def="93" use="107" covered="0"/>
+      <du var="this" def="93" use="99" covered="1"/>
+      <du var="this" def="93" use="100" covered="1"/>
+      <du var="this" def="93" use="101" covered="1"/>
+      <du var="this" def="93" use="102" covered="1"/>
+      <du var="this" def="93" use="103" covered="1"/>
+      <du var="this" def="93" use="105" covered="1"/>
+      <du var="this" def="93" use="107" covered="1"/>
       <du var="this" def="93" use="109" target="111" covered="0"/>
-      <du var="this" def="93" use="109" target="114" covered="0"/>
-      <du var="this" def="93" use="115" covered="0"/>
+      <du var="this" def="93" use="109" target="114" covered="1"/>
+      <du var="this" def="93" use="115" covered="1"/>
       <du var="this" def="93" use="111" covered="0"/>
-      <du var="allocator" def="93" use="99" covered="0"/>
-      <du var="maxCacheSize" def="93" use="100" covered="0"/>
-      <du var="maxCacheSize" def="93" use="105" covered="0"/>
-      <du var="maxCacheSize" def="93" use="114" covered="0"/>
+      <du var="allocator" def="93" use="99" covered="1"/>
+      <du var="maxCacheSize" def="93" use="100" covered="1"/>
+      <du var="maxCacheSize" def="93" use="105" covered="1"/>
+      <du var="maxCacheSize" def="93" use="114" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="94" target="94" covered="1"/>
       <du var="maxSegmentSize" def="93" use="94" target="94" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="94" target="94" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="96" covered="0"/>
+      <du var="maxSegmentSize" def="93" use="96" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="97" target="97" covered="1"/>
       <du var="maxSegmentSize" def="93" use="97" target="97" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="97" target="97" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="101" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="102" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="103" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="105" covered="0"/>
-      <du var="maxSegmentSize" def="93" use="114" covered="0"/>
+      <du var="maxSegmentSize" def="93" use="101" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="102" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="103" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="105" covered="1"/>
+      <du var="maxSegmentSize" def="93" use="114" covered="1"/>
       <du var="maxSegmentSize" def="93" use="111" covered="0"/>
-      <du var="alignedMaxSegmentSize" def="96" use="97" target="97" covered="0"/>
+      <du var="alignedMaxSegmentSize" def="96" use="97" target="97" covered="1"/>
       <du var="alignedMaxSegmentSize" def="96" use="97" target="97" covered="0"/>
       <du var="this.segmentsCount" def="105" use="109" target="111" covered="0"/>
-      <du var="this.segmentsCount" def="105" use="109" target="114" covered="0"/>
-      <du var="this.segmentsCount" def="105" use="115" covered="0"/>
-      <du var="this.cacheSegments" def="107" use="115" covered="0"/>
+      <du var="this.segmentsCount" def="105" use="109" target="114" covered="1"/>
+      <du var="this.segmentsCount" def="105" use="115" covered="1"/>
+      <du var="this.cacheSegments" def="107" use="115" covered="1"/>
       <du var="this.cacheSegments" def="107" use="111" covered="0"/>
       <du var="i" def="109" use="109" target="111" covered="0"/>
-      <du var="i" def="109" use="109" target="114" covered="0"/>
+      <du var="i" def="109" use="109" target="114" covered="1"/>
       <du var="i" def="109" use="111" covered="0"/>
       <du var="i" def="109" use="109" covered="0"/>
       <du var="i" def="109" use="109" target="111" covered="0"/>
       <du var="i" def="109" use="109" target="114" covered="0"/>
       <du var="i" def="109" use="111" covered="0"/>
       <du var="i" def="109" use="109" covered="0"/>
-      <counter type="DU" missed="41" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="15" covered="26"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="close" desc="()V">
       <counter type="DU" missed="11" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="put" desc="(JJLio/netty/buffer/ByteBuf;)Z">
-      <du var="this" def="135" use="146" covered="0"/>
-      <du var="this" def="135" use="147" covered="0"/>
-      <du var="this" def="135" use="148" covered="0"/>
-      <du var="this" def="135" use="150" target="152" covered="0"/>
-      <du var="this" def="135" use="150" target="153" covered="0"/>
+      <du var="this" def="135" use="146" covered="1"/>
+      <du var="this" def="135" use="147" covered="1"/>
+      <du var="this" def="135" use="148" covered="1"/>
+      <du var="this" def="135" use="150" target="152" covered="1"/>
+      <du var="this" def="135" use="150" target="153" covered="1"/>
       <du var="this" def="135" use="153" target="156" covered="0"/>
-      <du var="this" def="135" use="153" target="163" covered="0"/>
-      <du var="this" def="135" use="163" covered="0"/>
-      <du var="this" def="135" use="169" covered="0"/>
-      <du var="this" def="135" use="175" target="176" covered="0"/>
+      <du var="this" def="135" use="153" target="163" covered="1"/>
+      <du var="this" def="135" use="163" covered="1"/>
+      <du var="this" def="135" use="169" covered="1"/>
+      <du var="this" def="135" use="175" target="176" covered="1"/>
       <du var="this" def="135" use="175" target="178" covered="0"/>
-      <du var="this" def="135" use="180" covered="0"/>
-      <du var="this" def="135" use="181" covered="0"/>
-      <du var="this" def="135" use="182" covered="0"/>
-      <du var="ledgerId" def="135" use="169" covered="0"/>
-      <du var="ledgerId" def="135" use="175" target="176" covered="0"/>
+      <du var="this" def="135" use="180" covered="1"/>
+      <du var="this" def="135" use="181" covered="1"/>
+      <du var="this" def="135" use="182" covered="1"/>
+      <du var="ledgerId" def="135" use="169" covered="1"/>
+      <du var="ledgerId" def="135" use="175" target="176" covered="1"/>
       <du var="ledgerId" def="135" use="175" target="178" covered="0"/>
-      <du var="ledgerId" def="135" use="180" covered="0"/>
+      <du var="ledgerId" def="135" use="180" covered="1"/>
       <du var="entryId" def="135" use="170" target="172" covered="0"/>
-      <du var="entryId" def="135" use="170" target="175" covered="0"/>
-      <du var="entryId" def="135" use="175" target="176" covered="0"/>
+      <du var="entryId" def="135" use="170" target="175" covered="1"/>
+      <du var="entryId" def="135" use="175" target="176" covered="1"/>
       <du var="entryId" def="135" use="175" target="178" covered="0"/>
-      <du var="entryId" def="135" use="180" covered="0"/>
-      <du var="entry" def="135" use="163" covered="0"/>
-      <du var="this.cacheOffset" def="135" use="146" covered="0"/>
-      <du var="this.segmentOffsetMask" def="135" use="147" covered="0"/>
-      <du var="this.segmentOffsetBits" def="135" use="148" covered="0"/>
-      <du var="this.maxCacheSize" def="135" use="150" target="152" covered="0"/>
-      <du var="this.maxCacheSize" def="135" use="150" target="153" covered="0"/>
+      <du var="entryId" def="135" use="180" covered="1"/>
+      <du var="entry" def="135" use="163" covered="1"/>
+      <du var="this.cacheOffset" def="135" use="146" covered="1"/>
+      <du var="this.segmentOffsetMask" def="135" use="147" covered="1"/>
+      <du var="this.segmentOffsetBits" def="135" use="148" covered="1"/>
+      <du var="this.maxCacheSize" def="135" use="150" target="152" covered="1"/>
+      <du var="this.maxCacheSize" def="135" use="150" target="153" covered="1"/>
       <du var="this.maxSegmentSize" def="135" use="153" target="156" covered="0"/>
-      <du var="this.maxSegmentSize" def="135" use="153" target="163" covered="0"/>
-      <du var="this.cacheSegments" def="135" use="163" covered="0"/>
-      <du var="this.lastEntryMap" def="135" use="169" covered="0"/>
-      <du var="this.lastEntryMap" def="135" use="175" target="176" covered="0"/>
+      <du var="this.maxSegmentSize" def="135" use="153" target="163" covered="1"/>
+      <du var="this.cacheSegments" def="135" use="163" covered="1"/>
+      <du var="this.lastEntryMap" def="135" use="169" covered="1"/>
+      <du var="this.lastEntryMap" def="135" use="175" target="176" covered="1"/>
       <du var="this.lastEntryMap" def="135" use="175" target="178" covered="0"/>
-      <du var="this.index" def="135" use="180" covered="0"/>
-      <du var="this.cacheCount" def="135" use="181" covered="0"/>
-      <du var="this.cacheSize" def="135" use="182" covered="0"/>
-      <du var="size" def="135" use="150" target="152" covered="0"/>
-      <du var="size" def="135" use="150" target="153" covered="0"/>
+      <du var="this.index" def="135" use="180" covered="1"/>
+      <du var="this.cacheCount" def="135" use="181" covered="1"/>
+      <du var="this.cacheSize" def="135" use="182" covered="1"/>
+      <du var="size" def="135" use="150" target="152" covered="1"/>
+      <du var="size" def="135" use="150" target="153" covered="1"/>
       <du var="size" def="135" use="153" target="156" covered="0"/>
-      <du var="size" def="135" use="153" target="163" covered="0"/>
-      <du var="size" def="135" use="180" covered="0"/>
-      <du var="size" def="135" use="182" covered="0"/>
-      <du var="alignedSize" def="139" use="146" covered="0"/>
-      <du var="offset" def="146" use="150" target="152" covered="0"/>
-      <du var="offset" def="146" use="150" target="153" covered="0"/>
-      <du var="offset" def="146" use="180" covered="0"/>
+      <du var="size" def="135" use="153" target="163" covered="1"/>
+      <du var="size" def="135" use="180" covered="1"/>
+      <du var="size" def="135" use="182" covered="1"/>
+      <du var="alignedSize" def="139" use="146" covered="1"/>
+      <du var="offset" def="146" use="150" target="152" covered="1"/>
+      <du var="offset" def="146" use="150" target="153" covered="1"/>
+      <du var="offset" def="146" use="180" covered="1"/>
       <du var="localOffset" def="147" use="153" target="156" covered="0"/>
-      <du var="localOffset" def="147" use="153" target="163" covered="0"/>
-      <du var="localOffset" def="147" use="163" covered="0"/>
-      <du var="segmentIdx" def="148" use="163" covered="0"/>
+      <du var="localOffset" def="147" use="153" target="163" covered="1"/>
+      <du var="localOffset" def="147" use="163" covered="1"/>
+      <du var="segmentIdx" def="148" use="163" covered="1"/>
       <du var="currentLastEntryId" def="169" use="170" target="172" covered="0"/>
-      <du var="currentLastEntryId" def="169" use="170" target="175" covered="0"/>
-      <du var="currentLastEntryId" def="169" use="175" target="176" covered="0"/>
+      <du var="currentLastEntryId" def="169" use="170" target="175" covered="1"/>
+      <du var="currentLastEntryId" def="169" use="175" target="176" covered="1"/>
       <du var="currentLastEntryId" def="169" use="175" target="178" covered="0"/>
-      <counter type="DU" missed="56" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="11" covered="45"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="get" desc="(JJ)Lio/netty/buffer/ByteBuf;">
-      <du var="this" def="187" use="194" covered="0"/>
-      <du var="this" def="187" use="196" covered="0"/>
-      <du var="this" def="187" use="197" covered="0"/>
-      <du var="this" def="187" use="198" covered="0"/>
-      <du var="this.allocator" def="187" use="194" covered="0"/>
-      <du var="this.segmentOffsetMask" def="187" use="196" covered="0"/>
-      <du var="this.segmentOffsetBits" def="187" use="197" covered="0"/>
-      <du var="this.cacheSegments" def="187" use="198" covered="0"/>
+      <du var="this" def="187" use="194" covered="1"/>
+      <du var="this" def="187" use="196" covered="1"/>
+      <du var="this" def="187" use="197" covered="1"/>
+      <du var="this" def="187" use="198" covered="1"/>
+      <du var="this.allocator" def="187" use="194" covered="1"/>
+      <du var="this.segmentOffsetMask" def="187" use="196" covered="1"/>
+      <du var="this.segmentOffsetBits" def="187" use="197" covered="1"/>
+      <du var="this.cacheSegments" def="187" use="198" covered="1"/>
       <du var="result" def="187" use="188" target="189" covered="0"/>
-      <du var="result" def="187" use="188" target="192" covered="0"/>
-      <du var="result" def="187" use="192" covered="0"/>
-      <du var="result" def="187" use="193" covered="0"/>
-      <du var="result.first" def="187" use="192" covered="0"/>
-      <du var="result.second" def="187" use="193" covered="0"/>
-      <counter type="DU" missed="14" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="result" def="187" use="188" target="192" covered="1"/>
+      <du var="result" def="187" use="192" covered="1"/>
+      <du var="result" def="187" use="193" covered="1"/>
+      <du var="result.first" def="187" use="192" covered="1"/>
+      <du var="result.second" def="187" use="193" covered="1"/>
+      <counter type="DU" missed="1" covered="13"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="hasEntry" desc="(JJ)Z">
-      <du var="this" def="203" use="203" target="203" covered="0"/>
-      <du var="this" def="203" use="203" target="203" covered="0"/>
-      <du var="ledgerId" def="203" use="203" target="203" covered="0"/>
-      <du var="ledgerId" def="203" use="203" target="203" covered="0"/>
-      <du var="entryId" def="203" use="203" target="203" covered="0"/>
-      <du var="entryId" def="203" use="203" target="203" covered="0"/>
-      <du var="this.index" def="203" use="203" target="203" covered="0"/>
-      <du var="this.index" def="203" use="203" target="203" covered="0"/>
-      <counter type="DU" missed="8" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="this" def="203" use="203" target="203" covered="1"/>
+      <du var="this" def="203" use="203" target="203" covered="1"/>
+      <du var="ledgerId" def="203" use="203" target="203" covered="1"/>
+      <du var="ledgerId" def="203" use="203" target="203" covered="1"/>
+      <du var="entryId" def="203" use="203" target="203" covered="1"/>
+      <du var="entryId" def="203" use="203" target="203" covered="1"/>
+      <du var="this.index" def="203" use="203" target="203" covered="1"/>
+      <du var="this.index" def="203" use="203" target="203" covered="1"/>
+      <counter type="DU" missed="0" covered="8"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="getLastEntry" desc="(J)Lio/netty/buffer/ByteBuf;">
-      <du var="this" def="207" use="212" covered="0"/>
-      <du var="ledgerId" def="207" use="212" covered="0"/>
+      <du var="this" def="207" use="212" covered="1"/>
+      <du var="ledgerId" def="207" use="212" covered="1"/>
       <du var="lastEntryId" def="207" use="208" target="210" covered="0"/>
-      <du var="lastEntryId" def="207" use="208" target="212" covered="0"/>
-      <du var="lastEntryId" def="207" use="212" covered="0"/>
-      <counter type="DU" missed="5" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="lastEntryId" def="207" use="208" target="212" covered="1"/>
+      <du var="lastEntryId" def="207" use="212" covered="1"/>
+      <counter type="DU" missed="1" covered="4"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="forEach" desc="(Lorg/apache/bookkeeper/bookie/storage/ldb/WriteCache$EntryConsumer;)V">
       <du var="this" def="221" use="226" target="226" covered="0"/>
@@ -12112,9 +12112,9 @@
       <counter type="DU" missed="24" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="249" covered="0"/>
-    <counter type="METHOD" missed="9" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="153" covered="96"/>
+    <counter type="METHOD" missed="4" covered="5"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/bookie/storage/ldb/ReadCache">
     <method name="&lt;init&gt;" desc="(Lio/netty/buffer/ByteBufAllocator;JI)V">
@@ -20870,8 +20870,8 @@
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongLongHashMap$Section">
     <method name="get" desc="(JI)J">
-      <du var="this" def="421" use="428" covered="0"/>
-      <du var="this" def="421" use="429" covered="0"/>
+      <du var="this" def="421" use="428" covered="1"/>
+      <du var="this" def="421" use="429" covered="1"/>
       <du var="this" def="421" use="458" covered="0"/>
       <du var="this" def="421" use="462" covered="0"/>
       <du var="this" def="421" use="462" covered="0"/>
@@ -20879,28 +20879,28 @@
       <du var="this" def="421" use="445" covered="0"/>
       <du var="this" def="421" use="446" covered="0"/>
       <du var="this" def="421" use="447" covered="0"/>
-      <du var="this" def="421" use="431" target="433" covered="0"/>
+      <du var="this" def="421" use="431" target="433" covered="1"/>
       <du var="this" def="421" use="431" target="441" covered="0"/>
       <du var="this" def="421" use="462" covered="0"/>
       <du var="this" def="421" use="462" covered="0"/>
       <du var="key" def="421" use="450" target="451" covered="0"/>
       <du var="key" def="421" use="450" target="452" covered="0"/>
-      <du var="key" def="421" use="433" target="434" covered="0"/>
-      <du var="key" def="421" use="433" target="435" covered="0"/>
+      <du var="key" def="421" use="433" target="434" covered="1"/>
+      <du var="key" def="421" use="433" target="435" covered="1"/>
       <du var="keyHash" def="421" use="445" covered="0"/>
       <du var="this.capacity" def="421" use="445" covered="0"/>
-      <du var="this.table" def="421" use="428" covered="0"/>
-      <du var="this.table" def="421" use="429" covered="0"/>
+      <du var="this.table" def="421" use="428" covered="1"/>
+      <du var="this.table" def="421" use="429" covered="1"/>
       <du var="this.table" def="421" use="458" covered="0"/>
       <du var="this.table" def="421" use="446" covered="0"/>
       <du var="this.table" def="421" use="447" covered="0"/>
       <du var="stamp" def="421" use="462" covered="0"/>
       <du var="stamp" def="421" use="462" covered="0"/>
-      <du var="stamp" def="421" use="431" target="433" covered="0"/>
+      <du var="stamp" def="421" use="431" target="433" covered="1"/>
       <du var="stamp" def="421" use="431" target="441" covered="0"/>
       <du var="stamp" def="421" use="462" covered="0"/>
       <du var="stamp" def="421" use="462" covered="0"/>
-      <du var="acquiredLock" def="422" use="431" target="431" covered="0"/>
+      <du var="acquiredLock" def="422" use="431" target="431" covered="1"/>
       <du var="acquiredLock" def="422" use="431" target="441" covered="0"/>
       <du var="acquiredLock" def="422" use="441" target="442" covered="0"/>
       <du var="acquiredLock" def="422" use="441" target="450" covered="0"/>
@@ -20909,22 +20909,22 @@
       <du var="acquiredLock" def="422" use="461" target="462" covered="0"/>
       <du var="acquiredLock" def="422" use="461" target="451" covered="0"/>
       <du var="acquiredLock" def="422" use="461" target="462" covered="0"/>
-      <du var="acquiredLock" def="422" use="461" target="437" covered="0"/>
+      <du var="acquiredLock" def="422" use="461" target="437" covered="1"/>
       <du var="acquiredLock" def="422" use="461" target="462" covered="0"/>
-      <du var="acquiredLock" def="422" use="461" target="434" covered="0"/>
-      <du var="bucket" def="423" use="428" covered="0"/>
-      <du var="bucket" def="423" use="429" covered="0"/>
+      <du var="acquiredLock" def="422" use="461" target="434" covered="1"/>
+      <du var="bucket" def="423" use="428" covered="1"/>
+      <du var="bucket" def="423" use="429" covered="1"/>
       <du var="bucket" def="423" use="458" covered="0"/>
       <du var="storedKey" def="428" use="450" target="451" covered="0"/>
       <du var="storedKey" def="428" use="450" target="452" covered="0"/>
       <du var="storedKey" def="428" use="452" target="454" covered="0"/>
       <du var="storedKey" def="428" use="452" target="458" covered="0"/>
-      <du var="storedKey" def="428" use="433" target="434" covered="0"/>
-      <du var="storedKey" def="428" use="433" target="435" covered="0"/>
-      <du var="storedKey" def="428" use="435" target="437" covered="0"/>
+      <du var="storedKey" def="428" use="433" target="434" covered="1"/>
+      <du var="storedKey" def="428" use="433" target="435" covered="1"/>
+      <du var="storedKey" def="428" use="435" target="437" covered="1"/>
       <du var="storedKey" def="428" use="435" target="458" covered="0"/>
       <du var="storedValue" def="429" use="451" covered="0"/>
-      <du var="storedValue" def="429" use="434" covered="0"/>
+      <du var="storedValue" def="429" use="434" covered="1"/>
       <du var="stamp" def="442" use="431" target="433" covered="0"/>
       <du var="stamp" def="442" use="431" target="441" covered="0"/>
       <du var="stamp" def="442" use="462" covered="0"/>
@@ -20952,8 +20952,8 @@
       <du var="bucket" def="458" use="428" covered="0"/>
       <du var="bucket" def="458" use="429" covered="0"/>
       <du var="bucket" def="458" use="458" covered="0"/>
-      <counter type="DU" missed="86" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="67" covered="19"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="put" desc="(JJIZLorg/apache/bookkeeper/util/collections/ConcurrentLongLongHashMap$LongLongFunction;)J">
       <du var="this" def="468" use="476" covered="0"/>
@@ -21160,8 +21160,8 @@
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="compareAndSet" desc="(JJJI)Z">
-      <du var="this" def="587" use="595" covered="0"/>
-      <du var="this" def="587" use="596" covered="0"/>
+      <du var="this" def="587" use="595" covered="1"/>
+      <du var="this" def="587" use="596" covered="1"/>
       <du var="this" def="587" use="629" covered="0"/>
       <du var="this" def="587" use="632" target="635" covered="0"/>
       <du var="this" def="587" use="632" target="641" covered="0"/>
@@ -21169,13 +21169,13 @@
       <du var="this" def="587" use="635" covered="0"/>
       <du var="this" def="587" use="636" covered="0"/>
       <du var="this" def="587" use="638" covered="0"/>
-      <du var="this" def="587" use="612" covered="0"/>
-      <du var="this" def="587" use="615" covered="0"/>
-      <du var="this" def="587" use="616" covered="0"/>
-      <du var="this" def="587" use="617" covered="0"/>
+      <du var="this" def="587" use="612" covered="1"/>
+      <du var="this" def="587" use="615" covered="1"/>
+      <du var="this" def="587" use="616" covered="1"/>
+      <du var="this" def="587" use="617" covered="1"/>
       <du var="this" def="587" use="632" target="635" covered="0"/>
-      <du var="this" def="587" use="632" target="641" covered="0"/>
-      <du var="this" def="587" use="641" covered="0"/>
+      <du var="this" def="587" use="632" target="641" covered="1"/>
+      <du var="this" def="587" use="641" covered="1"/>
       <du var="this" def="587" use="635" covered="0"/>
       <du var="this" def="587" use="636" covered="0"/>
       <du var="this" def="587" use="638" covered="0"/>
@@ -21193,35 +21193,35 @@
       <du var="this" def="587" use="636" covered="0"/>
       <du var="this" def="587" use="638" covered="0"/>
       <du var="key" def="587" use="598" target="599" covered="0"/>
-      <du var="key" def="587" use="598" target="606" covered="0"/>
-      <du var="key" def="587" use="615" covered="0"/>
-      <du var="currentValue" def="587" use="608" target="609" covered="0"/>
+      <du var="key" def="587" use="598" target="606" covered="1"/>
+      <du var="key" def="587" use="615" covered="1"/>
+      <du var="currentValue" def="587" use="608" target="609" covered="1"/>
       <du var="currentValue" def="587" use="608" target="620" covered="0"/>
       <du var="currentValue" def="587" use="599" target="600" covered="0"/>
       <du var="currentValue" def="587" use="599" target="604" covered="0"/>
-      <du var="newValue" def="587" use="616" covered="0"/>
+      <du var="newValue" def="587" use="616" covered="1"/>
       <du var="newValue" def="587" use="604" covered="0"/>
       <du var="this.capacity" def="587" use="635" covered="0"/>
       <du var="this.capacity" def="587" use="635" covered="0"/>
       <du var="this.capacity" def="587" use="635" covered="0"/>
       <du var="this.capacity" def="587" use="635" covered="0"/>
-      <du var="this.table" def="587" use="595" covered="0"/>
-      <du var="this.table" def="587" use="596" covered="0"/>
+      <du var="this.table" def="587" use="595" covered="1"/>
+      <du var="this.table" def="587" use="596" covered="1"/>
       <du var="this.table" def="587" use="629" covered="0"/>
-      <du var="this.table" def="587" use="615" covered="0"/>
-      <du var="this.table" def="587" use="616" covered="0"/>
+      <du var="this.table" def="587" use="615" covered="1"/>
+      <du var="this.table" def="587" use="616" covered="1"/>
       <du var="this.table" def="587" use="604" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="635" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="641" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="635" covered="0"/>
-      <du var="this.resizeThresholdUp" def="587" use="632" target="641" covered="0"/>
+      <du var="this.resizeThresholdUp" def="587" use="632" target="641" covered="1"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="635" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="641" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="635" covered="0"/>
       <du var="this.resizeThresholdUp" def="587" use="632" target="641" covered="0"/>
       <du var="this.usedBuckets" def="587" use="632" target="635" covered="0"/>
       <du var="this.usedBuckets" def="587" use="632" target="641" covered="0"/>
-      <du var="this.usedBuckets" def="587" use="612" covered="0"/>
+      <du var="this.usedBuckets" def="587" use="612" covered="1"/>
       <du var="this.usedBuckets" def="587" use="632" target="635" covered="0"/>
       <du var="this.usedBuckets" def="587" use="632" target="641" covered="0"/>
       <du var="this.usedBuckets" def="587" use="632" target="635" covered="0"/>
@@ -21232,30 +21232,30 @@
       <du var="this.expandFactor" def="587" use="635" covered="0"/>
       <du var="this.expandFactor" def="587" use="635" covered="0"/>
       <du var="this.expandFactor" def="587" use="635" covered="0"/>
-      <du var="this.size" def="587" use="617" covered="0"/>
+      <du var="this.size" def="587" use="617" covered="1"/>
       <du var="stamp" def="587" use="641" covered="0"/>
+      <du var="stamp" def="587" use="638" covered="0"/>
+      <du var="stamp" def="587" use="641" covered="1"/>
       <du var="stamp" def="587" use="638" covered="0"/>
       <du var="stamp" def="587" use="641" covered="0"/>
       <du var="stamp" def="587" use="638" covered="0"/>
       <du var="stamp" def="587" use="641" covered="0"/>
       <du var="stamp" def="587" use="638" covered="0"/>
-      <du var="stamp" def="587" use="641" covered="0"/>
-      <du var="stamp" def="587" use="638" covered="0"/>
-      <du var="bucket" def="588" use="595" covered="0"/>
-      <du var="bucket" def="588" use="596" covered="0"/>
+      <du var="bucket" def="588" use="595" covered="1"/>
+      <du var="bucket" def="588" use="596" covered="1"/>
       <du var="bucket" def="588" use="629" covered="0"/>
       <du var="bucket" def="588" use="625" covered="0"/>
-      <du var="bucket" def="588" use="615" covered="0"/>
-      <du var="bucket" def="588" use="616" covered="0"/>
+      <du var="bucket" def="588" use="615" covered="1"/>
+      <du var="bucket" def="588" use="616" covered="1"/>
       <du var="bucket" def="588" use="604" covered="0"/>
       <du var="firstDeletedKey" def="591" use="624" target="625" covered="0"/>
       <du var="firstDeletedKey" def="591" use="624" target="629" covered="0"/>
       <du var="firstDeletedKey" def="591" use="609" target="610" covered="0"/>
-      <du var="firstDeletedKey" def="591" use="609" target="612" covered="0"/>
+      <du var="firstDeletedKey" def="591" use="609" target="612" covered="1"/>
       <du var="firstDeletedKey" def="591" use="610" covered="0"/>
       <du var="storedKey" def="595" use="598" target="599" covered="0"/>
-      <du var="storedKey" def="595" use="598" target="606" covered="0"/>
-      <du var="storedKey" def="595" use="606" target="608" covered="0"/>
+      <du var="storedKey" def="595" use="598" target="606" covered="1"/>
+      <du var="storedKey" def="595" use="606" target="608" covered="1"/>
       <du var="storedKey" def="595" use="606" target="622" covered="0"/>
       <du var="storedKey" def="595" use="622" target="624" covered="0"/>
       <du var="storedKey" def="595" use="622" target="629" covered="0"/>
@@ -21264,7 +21264,7 @@
       <du var="bucket" def="610" use="615" covered="0"/>
       <du var="bucket" def="610" use="616" covered="0"/>
       <du var="this.usedBuckets" def="612" use="632" target="635" covered="0"/>
-      <du var="this.usedBuckets" def="612" use="632" target="641" covered="0"/>
+      <du var="this.usedBuckets" def="612" use="632" target="641" covered="1"/>
       <du var="firstDeletedKey" def="625" use="624" target="625" covered="0"/>
       <du var="firstDeletedKey" def="625" use="624" target="629" covered="0"/>
       <du var="firstDeletedKey" def="625" use="609" target="610" covered="0"/>
@@ -21277,8 +21277,8 @@
       <du var="bucket" def="629" use="615" covered="0"/>
       <du var="bucket" def="629" use="616" covered="0"/>
       <du var="bucket" def="629" use="604" covered="0"/>
-      <counter type="DU" missed="121" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="92" covered="29"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="remove" desc="(JJI)J">
       <du var="this" def="647" use="652" covered="0"/>
@@ -21788,60 +21788,60 @@
       <counter type="DU" missed="16" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="889" covered="0"/>
-    <counter type="METHOD" missed="12" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="841" covered="48"/>
+    <counter type="METHOD" missed="10" covered="2"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongLongHashMap">
     <method name="&lt;init&gt;" desc="(IIFFZFF)V">
-      <du var="this" def="173" use="186" covered="0"/>
-      <du var="this" def="173" use="189" covered="0"/>
+      <du var="this" def="173" use="186" covered="1"/>
+      <du var="this" def="173" use="189" covered="1"/>
+      <du var="expectedItems" def="173" use="174" target="174" covered="1"/>
       <du var="expectedItems" def="173" use="174" target="174" covered="0"/>
-      <du var="expectedItems" def="173" use="174" target="174" covered="0"/>
+      <du var="expectedItems" def="173" use="176" target="176" covered="1"/>
       <du var="expectedItems" def="173" use="176" target="176" covered="0"/>
-      <du var="expectedItems" def="173" use="176" target="176" covered="0"/>
-      <du var="expectedItems" def="173" use="184" covered="0"/>
+      <du var="expectedItems" def="173" use="184" covered="1"/>
+      <du var="concurrencyLevel" def="173" use="175" target="175" covered="1"/>
       <du var="concurrencyLevel" def="173" use="175" target="175" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="175" target="175" covered="0"/>
+      <du var="concurrencyLevel" def="173" use="176" target="176" covered="1"/>
       <du var="concurrencyLevel" def="173" use="176" target="176" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="176" target="176" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="183" covered="0"/>
+      <du var="concurrencyLevel" def="173" use="183" covered="1"/>
+      <du var="mapFillFactor" def="173" use="177" target="177" covered="1"/>
       <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
-      <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
+      <du var="mapFillFactor" def="173" use="179" target="179" covered="1"/>
       <du var="mapFillFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapFillFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapFillFactor" def="173" use="185" covered="0"/>
-      <du var="mapFillFactor" def="173" use="189" covered="0"/>
+      <du var="mapFillFactor" def="173" use="185" covered="1"/>
+      <du var="mapFillFactor" def="173" use="189" covered="1"/>
+      <du var="mapFillFactor" def="173" use="177" target="177" covered="1"/>
       <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
-      <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="178" target="178" covered="1"/>
       <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="179" target="179" covered="1"/>
       <du var="mapIdleFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="189" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="189" covered="1"/>
+      <du var="mapIdleFactor" def="173" use="178" target="178" covered="1"/>
       <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="autoShrink" def="173" use="189" covered="0"/>
+      <du var="autoShrink" def="173" use="189" covered="1"/>
+      <du var="expandFactor" def="173" use="180" target="180" covered="1"/>
       <du var="expandFactor" def="173" use="180" target="180" covered="0"/>
-      <du var="expandFactor" def="173" use="180" target="180" covered="0"/>
-      <du var="expandFactor" def="173" use="189" covered="0"/>
+      <du var="expandFactor" def="173" use="189" covered="1"/>
+      <du var="shrinkFactor" def="173" use="181" target="181" covered="1"/>
       <du var="shrinkFactor" def="173" use="181" target="181" covered="0"/>
-      <du var="shrinkFactor" def="173" use="181" target="181" covered="0"/>
-      <du var="shrinkFactor" def="173" use="189" covered="0"/>
-      <du var="numSections" def="183" use="188" target="189" covered="0"/>
-      <du var="numSections" def="183" use="188" target="192" covered="0"/>
-      <du var="perSectionCapacity" def="185" use="189" covered="0"/>
-      <du var="this.sections" def="186" use="189" covered="0"/>
-      <du var="i" def="188" use="188" target="189" covered="0"/>
+      <du var="shrinkFactor" def="173" use="189" covered="1"/>
+      <du var="numSections" def="183" use="188" target="189" covered="1"/>
+      <du var="numSections" def="183" use="188" target="192" covered="1"/>
+      <du var="perSectionCapacity" def="185" use="189" covered="1"/>
+      <du var="this.sections" def="186" use="189" covered="1"/>
+      <du var="i" def="188" use="188" target="189" covered="1"/>
       <du var="i" def="188" use="188" target="192" covered="0"/>
-      <du var="i" def="188" use="189" covered="0"/>
-      <du var="i" def="188" use="188" covered="0"/>
-      <du var="i" def="188" use="188" target="189" covered="0"/>
-      <du var="i" def="188" use="188" target="192" covered="0"/>
-      <du var="i" def="188" use="189" covered="0"/>
-      <du var="i" def="188" use="188" covered="0"/>
-      <counter type="DU" missed="46" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="i" def="188" use="189" covered="1"/>
+      <du var="i" def="188" use="188" covered="1"/>
+      <du var="i" def="188" use="188" target="189" covered="1"/>
+      <du var="i" def="188" use="188" target="192" covered="1"/>
+      <du var="i" def="188" use="189" covered="1"/>
+      <du var="i" def="188" use="188" covered="1"/>
+      <counter type="DU" missed="13" covered="33"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="size" desc="()J">
       <du var="size" def="195" use="199" covered="0"/>
@@ -21929,10 +21929,10 @@
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="checkBiggerEqualZero" desc="(J)V">
-      <du var="n" def="923" use="923" target="924" covered="0"/>
-      <du var="n" def="923" use="923" target="926" covered="0"/>
-      <counter type="DU" missed="2" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="n" def="923" use="923" target="924" covered="1"/>
+      <du var="n" def="923" use="923" target="926" covered="1"/>
+      <counter type="DU" missed="0" covered="2"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="toString" desc="()Ljava/lang/String;">
       <du var="sb" def="930" use="937" target="938" covered="0"/>
@@ -21945,16 +21945,16 @@
       <counter type="DU" missed="7" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="195" covered="0"/>
-    <counter type="METHOD" missed="14" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="160" covered="35"/>
+    <counter type="METHOD" missed="12" covered="2"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongLongPairHashMap$Section">
     <method name="get" desc="(JJI)Lorg/apache/bookkeeper/util/collections/ConcurrentLongLongPairHashMap$LongPair;">
-      <du var="this" def="365" use="372" covered="0"/>
-      <du var="this" def="365" use="373" covered="0"/>
-      <du var="this" def="365" use="374" covered="0"/>
-      <du var="this" def="365" use="375" covered="0"/>
+      <du var="this" def="365" use="372" covered="1"/>
+      <du var="this" def="365" use="373" covered="1"/>
+      <du var="this" def="365" use="374" covered="1"/>
+      <du var="this" def="365" use="375" covered="1"/>
       <du var="this" def="365" use="406" covered="0"/>
       <du var="this" def="365" use="410" covered="0"/>
       <du var="this" def="365" use="410" covered="0"/>
@@ -21964,24 +21964,24 @@
       <du var="this" def="365" use="393" covered="0"/>
       <du var="this" def="365" use="394" covered="0"/>
       <du var="this" def="365" use="395" covered="0"/>
-      <du var="this" def="365" use="377" target="379" covered="0"/>
+      <du var="this" def="365" use="377" target="379" covered="1"/>
       <du var="this" def="365" use="377" target="387" covered="0"/>
       <du var="this" def="365" use="410" covered="0"/>
       <du var="this" def="365" use="410" covered="0"/>
       <du var="key1" def="365" use="398" target="398" covered="0"/>
       <du var="key1" def="365" use="398" target="400" covered="0"/>
-      <du var="key1" def="365" use="379" target="379" covered="0"/>
-      <du var="key1" def="365" use="379" target="381" covered="0"/>
+      <du var="key1" def="365" use="379" target="379" covered="1"/>
+      <du var="key1" def="365" use="379" target="381" covered="1"/>
       <du var="key2" def="365" use="398" target="399" covered="0"/>
       <du var="key2" def="365" use="398" target="400" covered="0"/>
-      <du var="key2" def="365" use="379" target="380" covered="0"/>
+      <du var="key2" def="365" use="379" target="380" covered="1"/>
       <du var="key2" def="365" use="379" target="381" covered="0"/>
       <du var="keyHash" def="365" use="391" covered="0"/>
       <du var="this.capacity" def="365" use="391" covered="0"/>
-      <du var="this.table" def="365" use="372" covered="0"/>
-      <du var="this.table" def="365" use="373" covered="0"/>
-      <du var="this.table" def="365" use="374" covered="0"/>
-      <du var="this.table" def="365" use="375" covered="0"/>
+      <du var="this.table" def="365" use="372" covered="1"/>
+      <du var="this.table" def="365" use="373" covered="1"/>
+      <du var="this.table" def="365" use="374" covered="1"/>
+      <du var="this.table" def="365" use="375" covered="1"/>
       <du var="this.table" def="365" use="406" covered="0"/>
       <du var="this.table" def="365" use="392" covered="0"/>
       <du var="this.table" def="365" use="393" covered="0"/>
@@ -21989,11 +21989,11 @@
       <du var="this.table" def="365" use="395" covered="0"/>
       <du var="stamp" def="365" use="410" covered="0"/>
       <du var="stamp" def="365" use="410" covered="0"/>
-      <du var="stamp" def="365" use="377" target="379" covered="0"/>
+      <du var="stamp" def="365" use="377" target="379" covered="1"/>
       <du var="stamp" def="365" use="377" target="387" covered="0"/>
       <du var="stamp" def="365" use="410" covered="0"/>
       <du var="stamp" def="365" use="410" covered="0"/>
-      <du var="acquiredLock" def="366" use="377" target="377" covered="0"/>
+      <du var="acquiredLock" def="366" use="377" target="377" covered="1"/>
       <du var="acquiredLock" def="366" use="377" target="387" covered="0"/>
       <du var="acquiredLock" def="366" use="387" target="388" covered="0"/>
       <du var="acquiredLock" def="366" use="387" target="398" covered="0"/>
@@ -22002,30 +22002,30 @@
       <du var="acquiredLock" def="366" use="409" target="410" covered="0"/>
       <du var="acquiredLock" def="366" use="409" target="399" covered="0"/>
       <du var="acquiredLock" def="366" use="409" target="410" covered="0"/>
-      <du var="acquiredLock" def="366" use="409" target="383" covered="0"/>
+      <du var="acquiredLock" def="366" use="409" target="383" covered="1"/>
       <du var="acquiredLock" def="366" use="409" target="410" covered="0"/>
-      <du var="acquiredLock" def="366" use="409" target="380" covered="0"/>
-      <du var="bucket" def="367" use="372" covered="0"/>
-      <du var="bucket" def="367" use="373" covered="0"/>
-      <du var="bucket" def="367" use="374" covered="0"/>
-      <du var="bucket" def="367" use="375" covered="0"/>
+      <du var="acquiredLock" def="366" use="409" target="380" covered="1"/>
+      <du var="bucket" def="367" use="372" covered="1"/>
+      <du var="bucket" def="367" use="373" covered="1"/>
+      <du var="bucket" def="367" use="374" covered="1"/>
+      <du var="bucket" def="367" use="375" covered="1"/>
       <du var="bucket" def="367" use="406" covered="0"/>
       <du var="storedKey1" def="372" use="398" target="398" covered="0"/>
       <du var="storedKey1" def="372" use="398" target="400" covered="0"/>
       <du var="storedKey1" def="372" use="400" target="402" covered="0"/>
       <du var="storedKey1" def="372" use="400" target="406" covered="0"/>
-      <du var="storedKey1" def="372" use="379" target="379" covered="0"/>
-      <du var="storedKey1" def="372" use="379" target="381" covered="0"/>
-      <du var="storedKey1" def="372" use="381" target="383" covered="0"/>
+      <du var="storedKey1" def="372" use="379" target="379" covered="1"/>
+      <du var="storedKey1" def="372" use="379" target="381" covered="1"/>
+      <du var="storedKey1" def="372" use="381" target="383" covered="1"/>
       <du var="storedKey1" def="372" use="381" target="406" covered="0"/>
       <du var="storedKey2" def="373" use="398" target="399" covered="0"/>
       <du var="storedKey2" def="373" use="398" target="400" covered="0"/>
-      <du var="storedKey2" def="373" use="379" target="380" covered="0"/>
+      <du var="storedKey2" def="373" use="379" target="380" covered="1"/>
       <du var="storedKey2" def="373" use="379" target="381" covered="0"/>
       <du var="storedValue1" def="374" use="399" covered="0"/>
-      <du var="storedValue1" def="374" use="380" covered="0"/>
+      <du var="storedValue1" def="374" use="380" covered="1"/>
       <du var="storedValue2" def="375" use="399" covered="0"/>
-      <du var="storedValue2" def="375" use="380" covered="0"/>
+      <du var="storedValue2" def="375" use="380" covered="1"/>
       <du var="stamp" def="388" use="377" target="379" covered="0"/>
       <du var="stamp" def="388" use="377" target="387" covered="0"/>
       <du var="stamp" def="388" use="410" covered="0"/>
@@ -22058,22 +22058,22 @@
       <du var="bucket" def="406" use="374" covered="0"/>
       <du var="bucket" def="406" use="375" covered="0"/>
       <du var="bucket" def="406" use="406" covered="0"/>
-      <counter type="DU" missed="111" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="83" covered="28"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="put" desc="(JJJJIZ)Z">
-      <du var="this" def="416" use="424" covered="0"/>
-      <du var="this" def="416" use="425" covered="0"/>
+      <du var="this" def="416" use="424" covered="1"/>
+      <du var="this" def="416" use="425" covered="1"/>
       <du var="this" def="416" use="458" covered="0"/>
-      <du var="this" def="416" use="442" covered="0"/>
-      <du var="this" def="416" use="445" covered="0"/>
-      <du var="this" def="416" use="446" covered="0"/>
-      <du var="this" def="416" use="447" covered="0"/>
-      <du var="this" def="416" use="448" covered="0"/>
-      <du var="this" def="416" use="449" covered="0"/>
+      <du var="this" def="416" use="442" covered="1"/>
+      <du var="this" def="416" use="445" covered="1"/>
+      <du var="this" def="416" use="446" covered="1"/>
+      <du var="this" def="416" use="447" covered="1"/>
+      <du var="this" def="416" use="448" covered="1"/>
+      <du var="this" def="416" use="449" covered="1"/>
       <du var="this" def="416" use="461" target="464" covered="0"/>
-      <du var="this" def="416" use="461" target="470" covered="0"/>
-      <du var="this" def="416" use="470" covered="0"/>
+      <du var="this" def="416" use="461" target="470" covered="1"/>
+      <du var="this" def="416" use="470" covered="1"/>
       <du var="this" def="416" use="464" covered="0"/>
       <du var="this" def="416" use="465" covered="0"/>
       <du var="this" def="416" use="467" covered="0"/>
@@ -22092,36 +22092,36 @@
       <du var="this" def="416" use="465" covered="0"/>
       <du var="this" def="416" use="467" covered="0"/>
       <du var="key1" def="416" use="427" target="427" covered="0"/>
-      <du var="key1" def="416" use="427" target="436" covered="0"/>
-      <du var="key1" def="416" use="445" covered="0"/>
-      <du var="key2" def="416" use="446" covered="0"/>
+      <du var="key1" def="416" use="427" target="436" covered="1"/>
+      <du var="key1" def="416" use="445" covered="1"/>
+      <du var="key2" def="416" use="446" covered="1"/>
       <du var="key2" def="416" use="427" target="428" covered="0"/>
       <du var="key2" def="416" use="427" target="436" covered="0"/>
-      <du var="value1" def="416" use="447" covered="0"/>
+      <du var="value1" def="416" use="447" covered="1"/>
       <du var="value1" def="416" use="430" covered="0"/>
-      <du var="value2" def="416" use="448" covered="0"/>
+      <du var="value2" def="416" use="448" covered="1"/>
       <du var="value2" def="416" use="431" covered="0"/>
       <du var="onlyIfAbsent" def="416" use="428" target="430" covered="0"/>
       <du var="onlyIfAbsent" def="416" use="428" target="434" covered="0"/>
       <du var="this.capacity" def="416" use="464" covered="0"/>
       <du var="this.capacity" def="416" use="464" covered="0"/>
       <du var="this.capacity" def="416" use="464" covered="0"/>
-      <du var="this.table" def="416" use="424" covered="0"/>
-      <du var="this.table" def="416" use="425" covered="0"/>
+      <du var="this.table" def="416" use="424" covered="1"/>
+      <du var="this.table" def="416" use="425" covered="1"/>
       <du var="this.table" def="416" use="458" covered="0"/>
-      <du var="this.table" def="416" use="445" covered="0"/>
-      <du var="this.table" def="416" use="446" covered="0"/>
-      <du var="this.table" def="416" use="447" covered="0"/>
-      <du var="this.table" def="416" use="448" covered="0"/>
+      <du var="this.table" def="416" use="445" covered="1"/>
+      <du var="this.table" def="416" use="446" covered="1"/>
+      <du var="this.table" def="416" use="447" covered="1"/>
+      <du var="this.table" def="416" use="448" covered="1"/>
       <du var="this.table" def="416" use="430" covered="0"/>
       <du var="this.table" def="416" use="431" covered="0"/>
       <du var="this.resizeThresholdUp" def="416" use="461" target="464" covered="0"/>
-      <du var="this.resizeThresholdUp" def="416" use="461" target="470" covered="0"/>
+      <du var="this.resizeThresholdUp" def="416" use="461" target="470" covered="1"/>
       <du var="this.resizeThresholdUp" def="416" use="461" target="464" covered="0"/>
       <du var="this.resizeThresholdUp" def="416" use="461" target="470" covered="0"/>
       <du var="this.resizeThresholdUp" def="416" use="461" target="464" covered="0"/>
       <du var="this.resizeThresholdUp" def="416" use="461" target="470" covered="0"/>
-      <du var="this.usedBuckets" def="416" use="442" covered="0"/>
+      <du var="this.usedBuckets" def="416" use="442" covered="1"/>
       <du var="this.usedBuckets" def="416" use="461" target="464" covered="0"/>
       <du var="this.usedBuckets" def="416" use="461" target="470" covered="0"/>
       <du var="this.usedBuckets" def="416" use="461" target="464" covered="0"/>
@@ -22131,31 +22131,31 @@
       <du var="this.expandFactor" def="416" use="464" covered="0"/>
       <du var="this.expandFactor" def="416" use="464" covered="0"/>
       <du var="this.expandFactor" def="416" use="464" covered="0"/>
-      <du var="this.size" def="416" use="449" covered="0"/>
-      <du var="stamp" def="416" use="470" covered="0"/>
+      <du var="this.size" def="416" use="449" covered="1"/>
+      <du var="stamp" def="416" use="470" covered="1"/>
       <du var="stamp" def="416" use="467" covered="0"/>
       <du var="stamp" def="416" use="470" covered="0"/>
       <du var="stamp" def="416" use="467" covered="0"/>
       <du var="stamp" def="416" use="470" covered="0"/>
       <du var="stamp" def="416" use="467" covered="0"/>
-      <du var="bucket" def="417" use="424" covered="0"/>
-      <du var="bucket" def="417" use="425" covered="0"/>
+      <du var="bucket" def="417" use="424" covered="1"/>
+      <du var="bucket" def="417" use="425" covered="1"/>
       <du var="bucket" def="417" use="458" covered="0"/>
       <du var="bucket" def="417" use="454" covered="0"/>
-      <du var="bucket" def="417" use="445" covered="0"/>
-      <du var="bucket" def="417" use="446" covered="0"/>
-      <du var="bucket" def="417" use="447" covered="0"/>
-      <du var="bucket" def="417" use="448" covered="0"/>
+      <du var="bucket" def="417" use="445" covered="1"/>
+      <du var="bucket" def="417" use="446" covered="1"/>
+      <du var="bucket" def="417" use="447" covered="1"/>
+      <du var="bucket" def="417" use="448" covered="1"/>
       <du var="bucket" def="417" use="430" covered="0"/>
       <du var="bucket" def="417" use="431" covered="0"/>
       <du var="firstDeletedKey" def="420" use="453" target="454" covered="0"/>
       <du var="firstDeletedKey" def="420" use="453" target="458" covered="0"/>
       <du var="firstDeletedKey" def="420" use="439" target="440" covered="0"/>
-      <du var="firstDeletedKey" def="420" use="439" target="442" covered="0"/>
+      <du var="firstDeletedKey" def="420" use="439" target="442" covered="1"/>
       <du var="firstDeletedKey" def="420" use="440" covered="0"/>
       <du var="storedKey1" def="424" use="427" target="427" covered="0"/>
-      <du var="storedKey1" def="424" use="427" target="436" covered="0"/>
-      <du var="storedKey1" def="424" use="436" target="439" covered="0"/>
+      <du var="storedKey1" def="424" use="427" target="436" covered="1"/>
+      <du var="storedKey1" def="424" use="436" target="439" covered="1"/>
       <du var="storedKey1" def="424" use="436" target="451" covered="0"/>
       <du var="storedKey1" def="424" use="451" target="453" covered="0"/>
       <du var="storedKey1" def="424" use="451" target="458" covered="0"/>
@@ -22166,7 +22166,7 @@
       <du var="bucket" def="440" use="447" covered="0"/>
       <du var="bucket" def="440" use="448" covered="0"/>
       <du var="this.usedBuckets" def="442" use="461" target="464" covered="0"/>
-      <du var="this.usedBuckets" def="442" use="461" target="470" covered="0"/>
+      <du var="this.usedBuckets" def="442" use="461" target="470" covered="1"/>
       <du var="firstDeletedKey" def="454" use="453" target="454" covered="0"/>
       <du var="firstDeletedKey" def="454" use="453" target="458" covered="0"/>
       <du var="firstDeletedKey" def="454" use="439" target="440" covered="0"/>
@@ -22182,8 +22182,8 @@
       <du var="bucket" def="458" use="448" covered="0"/>
       <du var="bucket" def="458" use="430" covered="0"/>
       <du var="bucket" def="458" use="431" covered="0"/>
-      <counter type="DU" missed="123" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="87" covered="36"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="remove" desc="(JJJJI)Z">
       <du var="this" def="476" use="481" covered="0"/>
@@ -22600,9 +22600,9 @@
       <counter type="DU" missed="24" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="628" covered="0"/>
-    <counter type="METHOD" missed="8" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="564" covered="64"/>
+    <counter type="METHOD" missed="6" covered="2"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongLongPairHashMap$LongPair">
     <method name="equals" desc="(Ljava/lang/Object;)Z">
@@ -22654,54 +22654,54 @@
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongLongPairHashMap">
     <method name="&lt;init&gt;" desc="(IIFFZFF)V">
-      <du var="this" def="173" use="186" covered="0"/>
-      <du var="this" def="173" use="189" covered="0"/>
+      <du var="this" def="173" use="186" covered="1"/>
+      <du var="this" def="173" use="189" covered="1"/>
+      <du var="expectedItems" def="173" use="174" target="174" covered="1"/>
       <du var="expectedItems" def="173" use="174" target="174" covered="0"/>
-      <du var="expectedItems" def="173" use="174" target="174" covered="0"/>
+      <du var="expectedItems" def="173" use="176" target="176" covered="1"/>
       <du var="expectedItems" def="173" use="176" target="176" covered="0"/>
-      <du var="expectedItems" def="173" use="176" target="176" covered="0"/>
-      <du var="expectedItems" def="173" use="184" covered="0"/>
+      <du var="expectedItems" def="173" use="184" covered="1"/>
+      <du var="concurrencyLevel" def="173" use="175" target="175" covered="1"/>
       <du var="concurrencyLevel" def="173" use="175" target="175" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="175" target="175" covered="0"/>
+      <du var="concurrencyLevel" def="173" use="176" target="176" covered="1"/>
       <du var="concurrencyLevel" def="173" use="176" target="176" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="176" target="176" covered="0"/>
-      <du var="concurrencyLevel" def="173" use="183" covered="0"/>
+      <du var="concurrencyLevel" def="173" use="183" covered="1"/>
+      <du var="mapFillFactor" def="173" use="177" target="177" covered="1"/>
       <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
-      <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
+      <du var="mapFillFactor" def="173" use="179" target="179" covered="1"/>
       <du var="mapFillFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapFillFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapFillFactor" def="173" use="185" covered="0"/>
-      <du var="mapFillFactor" def="173" use="189" covered="0"/>
+      <du var="mapFillFactor" def="173" use="185" covered="1"/>
+      <du var="mapFillFactor" def="173" use="189" covered="1"/>
+      <du var="mapFillFactor" def="173" use="177" target="177" covered="1"/>
       <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
-      <du var="mapFillFactor" def="173" use="177" target="177" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="178" target="178" covered="1"/>
       <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="179" target="179" covered="1"/>
       <du var="mapIdleFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="179" target="179" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="189" covered="0"/>
+      <du var="mapIdleFactor" def="173" use="189" covered="1"/>
+      <du var="mapIdleFactor" def="173" use="178" target="178" covered="1"/>
       <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="mapIdleFactor" def="173" use="178" target="178" covered="0"/>
-      <du var="autoShrink" def="173" use="189" covered="0"/>
+      <du var="autoShrink" def="173" use="189" covered="1"/>
+      <du var="expandFactor" def="173" use="180" target="180" covered="1"/>
       <du var="expandFactor" def="173" use="180" target="180" covered="0"/>
-      <du var="expandFactor" def="173" use="180" target="180" covered="0"/>
-      <du var="expandFactor" def="173" use="189" covered="0"/>
+      <du var="expandFactor" def="173" use="189" covered="1"/>
+      <du var="shrinkFactor" def="173" use="181" target="181" covered="1"/>
       <du var="shrinkFactor" def="173" use="181" target="181" covered="0"/>
-      <du var="shrinkFactor" def="173" use="181" target="181" covered="0"/>
-      <du var="shrinkFactor" def="173" use="189" covered="0"/>
-      <du var="numSections" def="183" use="188" target="189" covered="0"/>
-      <du var="numSections" def="183" use="188" target="192" covered="0"/>
-      <du var="perSectionCapacity" def="185" use="189" covered="0"/>
-      <du var="this.sections" def="186" use="189" covered="0"/>
-      <du var="i" def="188" use="188" target="189" covered="0"/>
+      <du var="shrinkFactor" def="173" use="189" covered="1"/>
+      <du var="numSections" def="183" use="188" target="189" covered="1"/>
+      <du var="numSections" def="183" use="188" target="192" covered="1"/>
+      <du var="perSectionCapacity" def="185" use="189" covered="1"/>
+      <du var="this.sections" def="186" use="189" covered="1"/>
+      <du var="i" def="188" use="188" target="189" covered="1"/>
       <du var="i" def="188" use="188" target="192" covered="0"/>
-      <du var="i" def="188" use="189" covered="0"/>
-      <du var="i" def="188" use="188" covered="0"/>
-      <du var="i" def="188" use="188" target="189" covered="0"/>
-      <du var="i" def="188" use="188" target="192" covered="0"/>
-      <du var="i" def="188" use="189" covered="0"/>
-      <du var="i" def="188" use="188" covered="0"/>
-      <counter type="DU" missed="46" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="i" def="188" use="189" covered="1"/>
+      <du var="i" def="188" use="188" covered="1"/>
+      <du var="i" def="188" use="188" target="189" covered="1"/>
+      <du var="i" def="188" use="188" target="192" covered="1"/>
+      <du var="i" def="188" use="189" covered="1"/>
+      <du var="i" def="188" use="188" covered="1"/>
+      <counter type="DU" missed="13" covered="33"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="size" desc="()J">
       <du var="size" def="195" use="199" covered="0"/>
@@ -22761,14 +22761,14 @@
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="checkBiggerEqualZero" desc="(J)V">
-      <du var="n" def="695" use="695" target="696" covered="0"/>
-      <du var="n" def="695" use="695" target="698" covered="0"/>
-      <counter type="DU" missed="2" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="n" def="695" use="695" target="696" covered="1"/>
+      <du var="n" def="695" use="695" target="698" covered="1"/>
+      <counter type="DU" missed="0" covered="2"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
-    <counter type="DU" missed="150" covered="0"/>
-    <counter type="METHOD" missed="10" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="115" covered="35"/>
+    <counter type="METHOD" missed="8" covered="2"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongHashSet$Section">
     <method name="contains" desc="(JI)Z">
@@ -22849,14 +22849,14 @@
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="add" desc="(JJ)Z">
-      <du var="this" def="349" use="357" covered="0"/>
+      <du var="this" def="349" use="357" covered="1"/>
       <du var="this" def="349" use="381" covered="0"/>
-      <du var="this" def="349" use="368" covered="0"/>
-      <du var="this" def="349" use="371" covered="0"/>
-      <du var="this" def="349" use="372" covered="0"/>
+      <du var="this" def="349" use="368" covered="1"/>
+      <du var="this" def="349" use="371" covered="1"/>
+      <du var="this" def="349" use="372" covered="1"/>
       <du var="this" def="349" use="384" target="387" covered="0"/>
-      <du var="this" def="349" use="384" target="393" covered="0"/>
-      <du var="this" def="349" use="393" covered="0"/>
+      <du var="this" def="349" use="384" target="393" covered="1"/>
+      <du var="this" def="349" use="393" covered="1"/>
       <du var="this" def="349" use="387" covered="0"/>
       <du var="this" def="349" use="388" covered="0"/>
       <du var="this" def="349" use="390" covered="0"/>
@@ -22867,47 +22867,47 @@
       <du var="this" def="349" use="388" covered="0"/>
       <du var="this" def="349" use="390" covered="0"/>
       <du var="item" def="349" use="359" target="361" covered="0"/>
-      <du var="item" def="349" use="359" target="362" covered="0"/>
-      <du var="item" def="349" use="371" covered="0"/>
+      <du var="item" def="349" use="359" target="362" covered="1"/>
+      <du var="item" def="349" use="371" covered="1"/>
       <du var="this.capacity" def="349" use="387" covered="0"/>
       <du var="this.capacity" def="349" use="387" covered="0"/>
-      <du var="this.table" def="349" use="357" covered="0"/>
+      <du var="this.table" def="349" use="357" covered="1"/>
       <du var="this.table" def="349" use="381" covered="0"/>
-      <du var="this.table" def="349" use="371" covered="0"/>
+      <du var="this.table" def="349" use="371" covered="1"/>
+      <du var="this.resizeThresholdUp" def="349" use="384" target="387" covered="0"/>
+      <du var="this.resizeThresholdUp" def="349" use="384" target="393" covered="1"/>
       <du var="this.resizeThresholdUp" def="349" use="384" target="387" covered="0"/>
       <du var="this.resizeThresholdUp" def="349" use="384" target="393" covered="0"/>
-      <du var="this.resizeThresholdUp" def="349" use="384" target="387" covered="0"/>
-      <du var="this.resizeThresholdUp" def="349" use="384" target="393" covered="0"/>
-      <du var="this.usedBuckets" def="349" use="368" covered="0"/>
+      <du var="this.usedBuckets" def="349" use="368" covered="1"/>
       <du var="this.usedBuckets" def="349" use="384" target="387" covered="0"/>
       <du var="this.usedBuckets" def="349" use="384" target="393" covered="0"/>
       <du var="this.usedBuckets" def="349" use="384" target="387" covered="0"/>
       <du var="this.usedBuckets" def="349" use="384" target="393" covered="0"/>
       <du var="this.expandFactor" def="349" use="387" covered="0"/>
       <du var="this.expandFactor" def="349" use="387" covered="0"/>
-      <du var="this.size" def="349" use="372" covered="0"/>
-      <du var="stamp" def="349" use="393" covered="0"/>
+      <du var="this.size" def="349" use="372" covered="1"/>
+      <du var="stamp" def="349" use="393" covered="1"/>
       <du var="stamp" def="349" use="390" covered="0"/>
       <du var="stamp" def="349" use="393" covered="0"/>
       <du var="stamp" def="349" use="390" covered="0"/>
-      <du var="bucket" def="350" use="357" covered="0"/>
+      <du var="bucket" def="350" use="357" covered="1"/>
       <du var="bucket" def="350" use="381" covered="0"/>
       <du var="bucket" def="350" use="377" covered="0"/>
-      <du var="bucket" def="350" use="371" covered="0"/>
+      <du var="bucket" def="350" use="371" covered="1"/>
       <du var="firstDeletedItem" def="353" use="376" target="377" covered="0"/>
       <du var="firstDeletedItem" def="353" use="376" target="381" covered="0"/>
       <du var="firstDeletedItem" def="353" use="365" target="366" covered="0"/>
-      <du var="firstDeletedItem" def="353" use="365" target="368" covered="0"/>
+      <du var="firstDeletedItem" def="353" use="365" target="368" covered="1"/>
       <du var="firstDeletedItem" def="353" use="366" covered="0"/>
       <du var="storedItem" def="357" use="359" target="361" covered="0"/>
-      <du var="storedItem" def="357" use="359" target="362" covered="0"/>
-      <du var="storedItem" def="357" use="362" target="365" covered="0"/>
+      <du var="storedItem" def="357" use="359" target="362" covered="1"/>
+      <du var="storedItem" def="357" use="362" target="365" covered="1"/>
       <du var="storedItem" def="357" use="362" target="374" covered="0"/>
       <du var="storedItem" def="357" use="374" target="376" covered="0"/>
       <du var="storedItem" def="357" use="374" target="381" covered="0"/>
       <du var="bucket" def="366" use="371" covered="0"/>
       <du var="this.usedBuckets" def="368" use="384" target="387" covered="0"/>
-      <du var="this.usedBuckets" def="368" use="384" target="393" covered="0"/>
+      <du var="this.usedBuckets" def="368" use="384" target="393" covered="1"/>
       <du var="firstDeletedItem" def="377" use="376" target="377" covered="0"/>
       <du var="firstDeletedItem" def="377" use="376" target="381" covered="0"/>
       <du var="firstDeletedItem" def="377" use="365" target="366" covered="0"/>
@@ -22917,8 +22917,8 @@
       <du var="bucket" def="381" use="381" covered="0"/>
       <du var="bucket" def="381" use="377" covered="0"/>
       <du var="bucket" def="381" use="371" covered="0"/>
-      <counter type="DU" missed="70" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <counter type="DU" missed="49" covered="21"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="remove" desc="(JI)Z">
       <du var="this" def="399" use="404" covered="0"/>
@@ -23188,59 +23188,59 @@
       <counter type="DU" missed="12" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="393" covered="0"/>
-    <counter type="METHOD" missed="8" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="372" covered="21"/>
+    <counter type="METHOD" missed="7" covered="1"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentLongHashSet">
     <method name="&lt;init&gt;" desc="(IIFFZFF)V">
-      <du var="this" def="154" use="167" covered="0"/>
-      <du var="this" def="154" use="170" covered="0"/>
+      <du var="this" def="154" use="167" covered="1"/>
+      <du var="this" def="154" use="170" covered="1"/>
+      <du var="expectedItems" def="154" use="155" target="155" covered="1"/>
       <du var="expectedItems" def="154" use="155" target="155" covered="0"/>
-      <du var="expectedItems" def="154" use="155" target="155" covered="0"/>
+      <du var="expectedItems" def="154" use="157" target="157" covered="1"/>
       <du var="expectedItems" def="154" use="157" target="157" covered="0"/>
-      <du var="expectedItems" def="154" use="157" target="157" covered="0"/>
-      <du var="expectedItems" def="154" use="165" covered="0"/>
+      <du var="expectedItems" def="154" use="165" covered="1"/>
+      <du var="concurrencyLevel" def="154" use="156" target="156" covered="1"/>
       <du var="concurrencyLevel" def="154" use="156" target="156" covered="0"/>
-      <du var="concurrencyLevel" def="154" use="156" target="156" covered="0"/>
+      <du var="concurrencyLevel" def="154" use="157" target="157" covered="1"/>
       <du var="concurrencyLevel" def="154" use="157" target="157" covered="0"/>
-      <du var="concurrencyLevel" def="154" use="157" target="157" covered="0"/>
-      <du var="concurrencyLevel" def="154" use="164" covered="0"/>
+      <du var="concurrencyLevel" def="154" use="164" covered="1"/>
+      <du var="mapFillFactor" def="154" use="158" target="158" covered="1"/>
       <du var="mapFillFactor" def="154" use="158" target="158" covered="0"/>
-      <du var="mapFillFactor" def="154" use="158" target="158" covered="0"/>
+      <du var="mapFillFactor" def="154" use="160" target="160" covered="1"/>
       <du var="mapFillFactor" def="154" use="160" target="160" covered="0"/>
-      <du var="mapFillFactor" def="154" use="160" target="160" covered="0"/>
-      <du var="mapFillFactor" def="154" use="170" covered="0"/>
+      <du var="mapFillFactor" def="154" use="170" covered="1"/>
+      <du var="mapFillFactor" def="154" use="158" target="158" covered="1"/>
       <du var="mapFillFactor" def="154" use="158" target="158" covered="0"/>
-      <du var="mapFillFactor" def="154" use="158" target="158" covered="0"/>
+      <du var="mapIdleFactor" def="154" use="159" target="159" covered="1"/>
       <du var="mapIdleFactor" def="154" use="159" target="159" covered="0"/>
-      <du var="mapIdleFactor" def="154" use="159" target="159" covered="0"/>
+      <du var="mapIdleFactor" def="154" use="160" target="160" covered="1"/>
       <du var="mapIdleFactor" def="154" use="160" target="160" covered="0"/>
-      <du var="mapIdleFactor" def="154" use="160" target="160" covered="0"/>
-      <du var="mapIdleFactor" def="154" use="170" covered="0"/>
+      <du var="mapIdleFactor" def="154" use="170" covered="1"/>
+      <du var="mapIdleFactor" def="154" use="159" target="159" covered="1"/>
       <du var="mapIdleFactor" def="154" use="159" target="159" covered="0"/>
-      <du var="mapIdleFactor" def="154" use="159" target="159" covered="0"/>
-      <du var="autoShrink" def="154" use="170" covered="0"/>
+      <du var="autoShrink" def="154" use="170" covered="1"/>
+      <du var="expandFactor" def="154" use="161" target="161" covered="1"/>
       <du var="expandFactor" def="154" use="161" target="161" covered="0"/>
-      <du var="expandFactor" def="154" use="161" target="161" covered="0"/>
-      <du var="expandFactor" def="154" use="170" covered="0"/>
+      <du var="expandFactor" def="154" use="170" covered="1"/>
+      <du var="shrinkFactor" def="154" use="162" target="162" covered="1"/>
       <du var="shrinkFactor" def="154" use="162" target="162" covered="0"/>
-      <du var="shrinkFactor" def="154" use="162" target="162" covered="0"/>
-      <du var="shrinkFactor" def="154" use="170" covered="0"/>
-      <du var="numSections" def="164" use="169" target="170" covered="0"/>
-      <du var="numSections" def="164" use="169" target="173" covered="0"/>
-      <du var="perSectionCapacity" def="166" use="170" covered="0"/>
-      <du var="this.sections" def="167" use="170" covered="0"/>
-      <du var="i" def="169" use="169" target="170" covered="0"/>
+      <du var="shrinkFactor" def="154" use="170" covered="1"/>
+      <du var="numSections" def="164" use="169" target="170" covered="1"/>
+      <du var="numSections" def="164" use="169" target="173" covered="1"/>
+      <du var="perSectionCapacity" def="166" use="170" covered="1"/>
+      <du var="this.sections" def="167" use="170" covered="1"/>
+      <du var="i" def="169" use="169" target="170" covered="1"/>
       <du var="i" def="169" use="169" target="173" covered="0"/>
-      <du var="i" def="169" use="170" covered="0"/>
-      <du var="i" def="169" use="169" covered="0"/>
-      <du var="i" def="169" use="169" target="170" covered="0"/>
-      <du var="i" def="169" use="169" target="173" covered="0"/>
-      <du var="i" def="169" use="170" covered="0"/>
-      <du var="i" def="169" use="169" covered="0"/>
-      <counter type="DU" missed="45" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="i" def="169" use="170" covered="1"/>
+      <du var="i" def="169" use="169" covered="1"/>
+      <du var="i" def="169" use="169" target="170" covered="1"/>
+      <du var="i" def="169" use="169" target="173" covered="1"/>
+      <du var="i" def="169" use="170" covered="1"/>
+      <du var="i" def="169" use="169" covered="1"/>
+      <counter type="DU" missed="13" covered="32"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
     <method name="size" desc="()J">
       <du var="size" def="176" use="180" covered="0"/>
@@ -23291,13 +23291,13 @@
     </method>
     <method name="checkBiggerEqualZero" desc="(J)V">
       <du var="n" def="587" use="587" target="588" covered="0"/>
-      <du var="n" def="587" use="587" target="590" covered="0"/>
-      <counter type="DU" missed="2" covered="0"/>
-      <counter type="METHOD" missed="1" covered="0"/>
+      <du var="n" def="587" use="587" target="590" covered="1"/>
+      <counter type="DU" missed="1" covered="1"/>
+      <counter type="METHOD" missed="0" covered="1"/>
     </method>
-    <counter type="DU" missed="143" covered="0"/>
-    <counter type="METHOD" missed="9" covered="0"/>
-    <counter type="CLASS" missed="1" covered="0"/>
+    <counter type="DU" missed="110" covered="33"/>
+    <counter type="METHOD" missed="7" covered="2"/>
+    <counter type="CLASS" missed="0" covered="1"/>
   </class>
   <class name="org/apache/bookkeeper/util/collections/ConcurrentOpenHashSet$Section">
     <method name="contains" desc="(Ljava/lang/Object;I)Z">
@@ -33017,7 +33017,7 @@
       <du var="this" def="69" use="90" covered="0"/>
       <du var="this" def="69" use="97" covered="0"/>
       <du var="this" def="69" use="102" covered="0"/>
-      <du var="ensembleSize" def="69" use="70" target="71" covered="1"/>
+      <du var="ensembleSize" def="69" use="70" target="71" covered="0"/>
       <du var="ensembleSize" def="69" use="70" target="74" covered="0"/>
       <du var="ensembleSize" def="69" use="111" covered="0"/>
       <du var="ensembleSize" def="69" use="86" target="87" covered="0"/>
@@ -33035,7 +33035,7 @@
       <du var="excludeBookies" def="69" use="86" target="89" covered="0"/>
       <du var="excludeBookies" def="69" use="91" target="92" covered="0"/>
       <du var="excludeBookies" def="69" use="91" target="94" covered="0"/>
-      <du var="FAIL" def="69" use="71" covered="1"/>
+      <du var="FAIL" def="69" use="71" covered="0"/>
       <du var="this.rwLock" def="69" use="74" covered="0"/>
       <du var="this.rwLock" def="69" use="78" covered="0"/>
       <du var="this.rwLock" def="69" use="84" covered="0"/>
@@ -33051,7 +33051,7 @@
       <du var="newBookies" def="69" use="91" target="89" covered="0"/>
       <du var="newBookies" def="69" use="94" covered="0"/>
       <du var="newBookies" def="69" use="97" covered="0"/>
-      <du var="newBookies" def="69" use="71" covered="1"/>
+      <du var="newBookies" def="69" use="71" covered="0"/>
       <du var="allBookies" def="76" use="105" covered="0"/>
       <du var="allBookies" def="76" use="106" covered="0"/>
       <du var="allBookies" def="76" use="86" target="87" covered="0"/>
@@ -33072,8 +33072,8 @@
       <du var="ensembleSize" def="111" use="112" target="113" covered="0"/>
       <du var="ensembleSize" def="111" use="112" target="116" covered="0"/>
       <du var="ensembleSize" def="111" use="111" covered="0"/>
-      <counter type="DU" missed="66" covered="3"/>
-      <counter type="METHOD" missed="0" covered="1"/>
+      <counter type="DU" missed="69" covered="0"/>
+      <counter type="METHOD" missed="1" covered="0"/>
     </method>
     <method name="onClusterChanged" desc="(Ljava/util/Set;Ljava/util/Set;)Ljava/util/Set;">
       <du var="this" def="139" use="146" target="147" covered="0"/>
@@ -33127,9 +33127,9 @@
       <counter type="DU" missed="10" covered="0"/>
       <counter type="METHOD" missed="1" covered="0"/>
     </method>
-    <counter type="DU" missed="115" covered="3"/>
-    <counter type="METHOD" missed="3" covered="1"/>
-    <counter type="CLASS" missed="0" covered="1"/>
+    <counter type="DU" missed="118" covered="0"/>
+    <counter type="METHOD" missed="4" covered="0"/>
+    <counter type="CLASS" missed="1" covered="0"/>
   </class>
   <class name="org/apache/bookkeeper/client/SyncCounter">
     <method name="block" desc="(I)V">
@@ -64387,7 +64387,7 @@
     <counter type="METHOD" missed="1" covered="0"/>
     <counter type="CLASS" missed="1" covered="0"/>
   </class>
-  <counter type="DU" missed="53701" covered="3"/>
-  <counter type="METHOD" missed="2422" covered="1"/>
-  <counter type="CLASS" missed="731" covered="1"/>
+  <counter type="DU" missed="53372" covered="332"/>
+  <counter type="METHOD" missed="2407" covered="16"/>
+  <counter type="CLASS" missed="725" covered="7"/>
 </report>
