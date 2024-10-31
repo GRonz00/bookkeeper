@@ -30,6 +30,7 @@ import org.apache.bookkeeper.net.DNSToSwitchMapping;
 import org.apache.bookkeeper.proto.BookieAddressResolver;
 import org.apache.bookkeeper.stats.StatsLogger;
 
+
 /**
  * A placement policy implementation use zone information for placing ensembles.
  *
