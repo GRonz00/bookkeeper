@@ -28,7 +28,7 @@ import static org.apache.bookkeeper.feature.SettableFeatureProvider.DISABLE_ALL;
 
 @RunWith(Enclosed.class)
 public class ZoneawareEnsemblePlacementPolicyImplTest {
-/*
+
     @RunWith(Parameterized.class)
     public static class NewEnsembleTest {
         @Parameterized.Parameters
@@ -88,44 +88,50 @@ public class ZoneawareEnsemblePlacementPolicyImplTest {
 
 
                             //{PlacementResult.of(valid1, PlacementPolicyAdherence.MEETS_STRICT),false, 3, 3, 0, null, emptyList, true, initial1 enforceStrictZoneawarePlacement},
-                            {null,true, 1, 0, -1, null, null, true, initial1, true,2},
-                            {null,true, 1, 0, 0, emptyMap, emptyList, true, initial1, true,2},
-                            {null,true, 1, 0, 1, validMap, validList, true, initial1, true,2},
+                            {null,true, 0, 1, 0, null, null, true, initial1, true,2},
+                            {null,true, 0, 1, 1, emptyMap, emptyList, true, initial1, true,2},
+                            {null,true, 0, 1, 2, validMap, validList, true, initial1, true,2},
                             {null,true, 1, 1, 0, null, invalidList, true, initial1, true,2},
                             {null,true, 1, 1, 1, emptyMap, mixList, true, initial1, true,2},
                             {null,true, 1, 1, 2, validMap, null, true, initial1, true,2},
-                            {null,true, 1, 2, 1, null, emptyList, true, initial1, true,2},
-                            {null,true, 1, 2, 2, emptyMap, validList, true, initial1, true,2},
-                            {null,true, 1, 2, 3, validMap, invalidList, true, initial1, true,2},
-                            {null,true, 2, 1, 0, null, mixList, true, initial1, true,2},
-                            {null,true, 2, 1, 1, emptyMap, null, true, initial1, true,2},
-                            {null,true, 2, 1, 2, validMap, emptyList, true, initial1, true,2},
+                            {null,true, 2, 1, 0, null, emptyList, true, initial1, true,2},
+                            {null,true, 2, 1, 1, emptyMap, validList, true, initial1, true,2},
+                            {null,true, 2, 1, 2, validMap, invalidList, true, initial1, true,2},
+                            {null,true, 1, 2, 1, null, mixList, true, initial1, true,2},
+                            {null,true, 1, 2, 2, emptyMap, null, true, initial1, true,2},
+                            {null,true, 1, 2, 3, validMap, emptyList, true, initial1, true,2},
                             {null,true, 2, 2, 1, null, validList, true, initial1, true,2},
                             {null,true, 2, 2, 2, emptyMap, invalidList, true, initial1, true,2},
                             {null,true, 2, 2, 3, validMap, mixList, true, initial1, true,2},
-                            {null,true, 2, 3, 2, null, null, true, initial1, true,2},
-                            {null,true, 2, 3, 3, emptyMap, emptyList, true, initial1, true,2},
-                            {null,true, 2, 3, 4, validMap, validList, true, initial1, true,2},
-                            {null,true, 3, 2, 1, null, invalidList, true, initial1, true,2},
-                            {null,true, 3, 2, 2, emptyMap, mixList, true, initial1, true,2},
-                            {null,true, 3, 2, 3, validMap, null, true, initial1, true,2},
+                            {null,true, 3, 2, 1, null, null, true, initial1, true,2},
+                            {null,true, 3, 2, 2, emptyMap, emptyList, true, initial1, true,2},
+                            {null,true, 3, 2, 3, validMap, validList, true, initial1, true,2},
+                            {null,true, 2, 3, 2, null, invalidList, true, initial1, true,2},
+                            {null,true, 2, 3, 3, emptyMap, mixList, true, initial1, true,2},
+                            {null,true, 2, 3, 4, validMap, null, true, initial1, true,2},
                             {PlacementResult.of(valid1, PlacementPolicyAdherence.MEETS_STRICT),false, 3, 3, 2, null, emptyList, true, initial1, true,2},
                             {null,true, 3, 3, 3, emptyMap, validList, true, initial1, true,2},
                             //{null,true, 3, 3, 4, validMap, invalidList, true, initial1, true,2}, non viene effettuato il controllo sul ack quorum
-                            {null,true, 3, 4, 3, null, mixList, true, initial1, true,2},
-                            {null,true, 3, 4, 4, emptyMap, null, true, initial1, true,2},
-                            {null,true, 3, 4, 5, validMap, emptyList, true, initial1, true,2},
+                            {null,true, 4, 3, 2, null, mixList, true, initial1, true,2},
+                            {null,true, 4, 3, 3, emptyMap, null, true, initial1, true,2},
+                            {null,true, 4, 3, 4, validMap, emptyList, true, initial1, true,2},
+
                             //Jacoco improvement
                             {PlacementResult.of(valid1, PlacementPolicyAdherence.MEETS_STRICT),false, 3, 3, 3, emptyMap, emptyList, false, initial1, true,2},//non pesato
                             {PlacementResult.of(valid1, PlacementPolicyAdherence.MEETS_STRICT),false, 3, 3, 3, emptyMap, emptyList, true, initial1, false,2},//random con abbastanza booki
                             {null,true, 3, 3, 3, emptyMap, validList, true, initial1, false,2},//random senza abbastanza bookie
                             {PlacementResult.of(valid2, PlacementPolicyAdherence.MEETS_SOFT),false, 3, 3, 2, null, validList, true, initial2, true,2}, //cover add default domain
-                            //pit improvement
-                            {null,true, 3,3, 0, emptyMap, emptyList, true, initial3, true,2},//pit kill secondo if enforceStrictZoneawarePlacement
-                            {null,true, 3,2, 0, emptyMap, emptyList, true, initial1, true,2},//pit kill primo if enforceStrictZoneawarePlacement
+
                             {PlacementResult.of(new HashSet<>(Collections.singletonList(
                                     addr1.toBookieId()
                             )), PlacementPolicyAdherence.MEETS_STRICT),false, 1, 1,0, null, emptyList, true, initial4, true,0},// miglioria badua
+
+                            //pit improvement
+                            {null,true, 3,3, 0, emptyMap, emptyList, true, initial3, true,2},//pit kill secondo if enforceStrictZoneawarePlacement
+                            {null,true, 3,2, 0, emptyMap, emptyList, true, initial1, true,2},//pit kill primo if enforceStrictZoneawarePlacement
+
+
+
                     }
             );
         }
@@ -235,7 +241,9 @@ public class ZoneawareEnsemblePlacementPolicyImplTest {
         }
     }
 
- */
+
+
+
 @RunWith(Parameterized.class)
 public static class IsEnsembleAdheringToPlacementPolicyTest{
     @Parameterized.Parameters
@@ -271,8 +279,8 @@ public static class IsEnsembleAdheringToPlacementPolicyTest{
         List<BookieId> diffUD_eq = Arrays.asList(addr1.toBookieId(), addr13.toBookieId(),addr14.toBookieId());
         List<BookieId> diffUD_mag = Arrays.asList(addr1.toBookieId(), addr13.toBookieId(),addr14.toBookieId(),addr15.toBookieId());
         List<BookieId> diffUD_mod = Arrays.asList(addr1.toBookieId(), addr13.toBookieId(),addr14.toBookieId(),addr15.toBookieId(),addr16.toBookieId(),addr17.toBookieId(),addr18.toBookieId());
-        List<BookieId> undLoc = Arrays.asList(addr1.toBookieId(), addr2.toBookieId(),addr18.toBookieId());
 
+        List<BookieId> undLoc = Arrays.asList(addr1.toBookieId(), addr2.toBookieId(),addr18.toBookieId());
         List<BookieId> diffUd_min_minUD = Arrays.asList(addr1.toBookieId(),addr7.toBookieId(), addr15.toBookieId());//num zone maggiore del minimo ma in una zona ci sono due con stesso ud
         List<BookieId> diffUd_min_minUD_des = Arrays.asList(addr1.toBookieId(), addr7.toBookieId(),addr3.toBookieId(),addr4.toBookieId(),addr5.toBookieId(),addr6.toBookieId());//num zone maggiore delle desiderate ma in una zona ci sono due con stesso ud
         List<BookieId> n_zone_mim_minzone =  Arrays.asList(addr1.toBookieId(),addr11.toBookieId(), addr12.toBookieId());
@@ -285,31 +293,34 @@ public static class IsEnsembleAdheringToPlacementPolicyTest{
                         {strict_mag,3,4,PlacementPolicyAdherence.FAIL,false,3},
                         {strict_mod,3,2,PlacementPolicyAdherence.MEETS_STRICT,false,3},
                         {sameZon_min,3,3,PlacementPolicyAdherence.FAIL,false,3},
-                        //{sameZon_eq,3,4,null,true},
+                        //{sameZon_eq,3,4,PlacementPolicyAdherence.FAIL,false,3},
                         {sameZon_mag,3,2,PlacementPolicyAdherence.FAIL,false,3},
                         {sameZon_mod,3,3,PlacementPolicyAdherence.FAIL,false,3},
                         {diffUd_min,3,4,PlacementPolicyAdherence.FAIL,false,3},
                         {diffUD_eq,3,2,PlacementPolicyAdherence.MEETS_SOFT,false,3},
                         {diffUD_mag,3,3,PlacementPolicyAdherence.FAIL,false,3},
-                        //{diffUD_mod,3,4,null,true}
+                        //{diffUD_mod,3,4,PlacementPolicyAdherence.FAIL,false, 3}
                         {strict_min,2,2,PlacementPolicyAdherence.FAIL,false,3},
-                        {sameZon_min,2,2,PlacementPolicyAdherence.FAIL,false,3},
-                        {diffUd_min,2,2,PlacementPolicyAdherence.FAIL,false,3},
-                        {new ArrayList<>(),3,3,PlacementPolicyAdherence.FAIL,false,3},
+                        {sameZon_min,2,3,PlacementPolicyAdherence.FAIL,false,3},
+                        {diffUd_min,2,4,PlacementPolicyAdherence.FAIL,false,3},
+                        {new ArrayList<>(),3,2,PlacementPolicyAdherence.FAIL,false,3},
                         {null,3,3,PlacementPolicyAdherence.FAIL,false,3},
-                        {undLoc,3,3,PlacementPolicyAdherence.FAIL,false,3},
+
                         //jacoco
+                        {undLoc,3,3,PlacementPolicyAdherence.FAIL,false,3},
                         {diffUd_min_minUD,3,3,PlacementPolicyAdherence.FAIL,false,3},
                         {n_zone_mim_minzone,3,3,PlacementPolicyAdherence.FAIL,false,3},
                         {diffUd_min_minUD_des,3,3,PlacementPolicyAdherence.FAIL,false,2},
-                        //<du var="placementPolicyAdherence" def="867" use="947" target="893" covered="0"/> //vedi jacoco comunque impossibile diverso if appena la policy cambia a if return
+                        //<du var="placementPolicyAdherence" def="867" use="947" target="893" covered="0"/> //impossibile diverso if appena la policy cambia a if return
                         //<du var="placementPolicyAdherence" def="948" use="947" target="948" covered="0"/> stesso motivo
-                        //<du var="i" def="893" use="893" target="953" covered="0"/> la taglia della lista ddovrebbe essere 0 ma viene fatto precedentemente il controllo che sia diverso da zero
+                        //<du var="i" def="893" use="893" target="953" covered="0"/> la taglia della lista dovrebbe essere 0 ma viene fatto precedentemente il controllo che sia diverso da zero
                         //<du var="j" def="896" use="896" target="922" covered="0"/> bisognerebbe mettere writeQuorumSize=0 ma per farlo bisognerebbe configurare minNumZonesPerWriteQuorum come negativo cosa non permessa
                         //tutte le altre sono debug
                         //pit condizione di boundary cambiata non da errori perchè ad ogni iterazione del for si pulisce tutto e si utilizza il mod ensemble size, quindi viene solo effettuato 2 volte il controllo sul primo elemento
                         //il clear non è necessario perche è una mappa di supporto per l'altra, quando non esiste la riga per l'altra della seconda viene
                         //istanziata a 1, se invece esiste viene aggiornato il valore. Quindi se la prima mappa viene pulità non cambiera il risultato
+
+
                 });
     }
     private final EnsemblePlacementPolicy.PlacementPolicyAdherence expected;
@@ -435,11 +446,6 @@ public static class IsEnsembleAdheringToPlacementPolicyTest{
 
     }
 }
-
-
-
-
-
 
 
 
