@@ -28,7 +28,7 @@ jobs:
       - name: Build and Generate PIT Report
         run: mvn clean verify -P pit
       - name: Upload PIT Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: PITReport
           path: bookkeeper-server/target/pit-reports/

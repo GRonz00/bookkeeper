@@ -28,7 +28,7 @@ jobs:
       - name: Build and Generate JaCoCO Report
         run: mvn clean verify -P jacoco
       - name: Upload JaCoCo Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: JaCoCoReport
           path: jacoco-reports/target/site/jacoco-aggregate/

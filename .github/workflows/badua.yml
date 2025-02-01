@@ -35,7 +35,7 @@ jobs:
       - name: Build and Generate ba-dua Report
         run: mvn clean verify -P ba-dua
       - name: Upload ba-dua Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: BaDuaReport
           path: bookkeeper-server/target/badua.xml
