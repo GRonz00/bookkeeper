@@ -28,15 +28,17 @@ public class WriteCacheTest {
         public static Collection<Object[]> getParameters() {
             return Arrays.asList(new Object[][]{
                     {-1L,-1L,null,false,true},
-                    {0L,0L,Unpooled.wrappedBuffer("valuevaluevalue".getBytes()),false,false},
-                    {1L,1L,Unpooled.wrappedBuffer("value".getBytes()),true,false},
-                    {1L,1L,Unpooled.wrappedBuffer("".getBytes()),true,false},
+                    {0L,0L,Unpooled.wrappedBuffer(new byte[15]),false,false},
+                    {1L,1L,Unpooled.wrappedBuffer(new byte[5]),true,false},
+                    {1L,1L,Unpooled.wrappedBuffer(new byte[0]),true,false},
 
-                    //Pit
-                    {1L,1L,Unpooled.wrappedBuffer("valuevalue".getBytes()),false,false},//segment-offset<size
-                    {2L,1L,Unpooled.wrappedBuffer("value".getBytes()),true,false},//provo a scrivere un entry prima dell ultima
-                    {3L,9L,Unpooled.wrappedBuffer("value".getBytes()),true,false},//provo a scrivere un entry con id che già c'e
-                    {4L,1L,Unpooled.wrappedBuffer("value".getBytes()),true,false},//provo a scrivere un entry con id che già c'e
+                    {1L,1L,Unpooled.wrappedBuffer(new byte[10]),false,false},//segment-offset<size
+                    {2L,1L,Unpooled.wrappedBuffer(new byte[5]),true,false},
+                    {3L,9L,Unpooled.wrappedBuffer(new byte[5]),true,false},
+                    {4L,1L,Unpooled.wrappedBuffer(new byte[5]),true,false},
+                    {5L,1L,Unpooled.wrappedBuffer(new byte[5]),false,false},
+                    {6L,1L,Unpooled.wrappedBuffer(new byte[8]),true,false},
+                    {7L,1L,Unpooled.wrappedBuffer(new byte[129]),false,false},
 
 
             });
@@ -65,6 +67,15 @@ public class WriteCacheTest {
                 }
                 if(ledgerId == 4L){
                     writeCache = new WriteCache(UnpooledByteBufAllocator.DEFAULT, 5,8);
+                }
+                if(ledgerId == 5L){
+                    writeCache = new WriteCache(UnpooledByteBufAllocator.DEFAULT, 3,8);
+                }
+                if(ledgerId == 6L){
+                    writeCache = new WriteCache(UnpooledByteBufAllocator.DEFAULT, 15,8);
+                }
+                if(ledgerId == 7L){
+                    writeCache = new WriteCache(UnpooledByteBufAllocator.DEFAULT, 2000,128);
                 }
                 Assert.assertEquals(expected,writeCache.put(ledgerId, entryId, entry));
                 if(expected){
